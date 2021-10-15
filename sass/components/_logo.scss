@@ -1,0 +1,29 @@
+.logo {
+    @extend %link;
+    display: block;
+    
+    
+    color: $accent-color;
+    font-family: %$logo-font;
+
+font-weight: 700;
+font-size: 26px;
+line-height: 1.19;
+
+   &:hover, &:focus {
+    color: $accent-color;
+
+}
+}
+.logo-header {
+    margin-right: 93px;
+    padding: 24px 0;
+}
+.header-logo {
+    color: $primary-text-color;
+    transition: color 250ms $timing-function;
+    &:hover, &:focus {
+        color: inherit;
+    }
+}
+

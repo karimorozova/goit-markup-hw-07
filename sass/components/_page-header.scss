@@ -1,0 +1,98 @@
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-box {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.list-nav {
+    @extend %list;
+    display: flex;
+    
+}
+
+
+
+.item-nav {
+    position: relative;
+
+    &:not(:last-child) {
+    margin-right: 50px;
+}
+}
+
+
+
+.link-nav.current {
+    @extend %link;
+    color: $accent-color;
+    &::after {
+        position: absolute;
+        bottom: 0;
+    left: 0;
+    
+        content: "";
+        width: 100%;
+    height: 4px;
+    
+    
+    background-color: $accent-color;
+    border-radius: 2px;
+    }
+}
+
+
+.link-nav {
+    @extend %link;
+    display: block;
+    padding: 32px 0;
+ font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
+ transition: color 250ms $timing-function;
+
+ &:hover, &:focus {
+    color: $accent-color;
+ }
+ }
+ 
+
+ .contacts-list {
+     @extend %list;
+     display: flex;
+     margin-left: auto;
+ }
+ 
+ .contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+ .contacts-link {
+     @extend %link;
+    display: inline-flex;
+    align-items: center;
+    padding: 32px 0;
+
+    color: $secondary-text-color;
+     font-weight: 500;
+ font-size: 14px;
+ line-height: 1.14;
+ letter-spacing: 0.02em;
+ transition: color 250ms $timing-function;
+
+ &:hover, &:focus {
+    color: $accent-color;
+ }
+ }
+ 
+ .contacts-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
