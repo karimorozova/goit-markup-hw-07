@@ -1,0 +1,130 @@
+.form-title {
+    margin-bottom: 12px;
+    text-align: center;
+   font-style: 700;
+   font-size: 20px;
+   line-height: 1.15;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+.form-label {
+   font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: $secondary-text-color;
+cursor: pointer;
+}
+.input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+.form-input {
+    // display: flex;
+    // align-items: center;
+    width: 100%;
+    min-height: 40px;
+    padding: 11px 12px;
+    padding-left: 34px;
+    font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: $secondary-text-color;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+cursor: pointer;
+transition: border-color 250ms $timing-function;
+
+&:focus {
+    border-color: $accent-color;
+}
+
+}
+
+.form-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: fill 250ms $timing-function;
+
+.form-input:focus ~ & {
+    fill: $accent-color;
+}
+
+}
+
+/* Textarea comment */
+
+.comment-field {
+    margin-bottom: 20px;
+
+}
+.comment {
+    @extend %textarea;
+    margin-top: 4px;
+    padding: 12px 16px;
+    min-height: 120px;
+}
+.comment::placeholder {
+    font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.01em;
+color:rgba(117, 117, 117, 0.5);
+}
+
+/* Checkbox */
+
+.checkbox-container {
+   text-align: center;
+    margin-bottom: 30px;
+}
+.checkbox-label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 1.46;
+    color: $secondary-text-color;
+
+}
+.checkbox-input {
+   @extend %visually-hidden;
+}
+.poicy-link {
+    color: $accent-color;
+}
+ .checkbox-icon {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: opacity 250ms $timing-function;
+
+.checkbox-input:checked ~ & {
+    opacity: 0;
+} 
+}
+
+ .checked-icon {
+    position: absolute;
+    top: 2px;
+    left: 0;
+     opacity: 0;  
+     transition: opacity 250ms $timing-function;
+
+ .checkbox-input:checked ~ & {
+    opacity: 1;
+}
+    }
+
+/* Form button */
+.form-btn {
+    @extend %button;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
