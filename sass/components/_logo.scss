@@ -26,4 +26,17 @@ line-height: 1.19;
         color: inherit;
     }
 }
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-logo {
+    color: $primary-white-color;
+    transition: color 250ms $timing-function;
+
+    &:hover, &:focus {
+        color: inherit;
+    }
+}
+
 

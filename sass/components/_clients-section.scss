@@ -1,0 +1,48 @@
+.clients {
+    @extend %section;
+}
+.container {
+    @extend %container;
+}
+.section-title {
+    @extend %section-title;
+}
+
+.clients-list {
+    @extend %list;
+    display: flex;
+    flex-basis: calc((100% - 150px) / 6);
+}
+.clients-item:not(:nth-child(6n)) {
+    margin-right: 30px;
+   
+}
+
+ .clients-link {
+     @extend %link;
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+
+    width: 170px;
+    height: 92px;
+    border: 1px solid $primary-icon-color;
+   
+    transition: border 250ms $timing-function;
+
+    &:hover, &:focus {
+        border: 1px solid $accent-color;
+    }
+}
+.clients-icon {
+    fill: $primary-icon-color;
+    transition: fill 250ms $timing-function;
+
+    .clients-link:hover &,
+.clients-link:focus & {
+    fill: $accent-color;
+}
+}
+
+
+

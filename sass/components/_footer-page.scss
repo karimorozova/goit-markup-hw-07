@@ -1,0 +1,137 @@
+.page-footer {
+    padding: 60px 0;
+    background-color: $primary-bgcolor;
+}
+.footer-container {
+    @extend %container;
+    display: flex;
+}
+
+.address-container {
+    margin-right: 70px;
+}
+.address-list {
+    @extend %list;
+}
+.address-item:not(:last-child) {
+    margin-bottom: 9px;
+
+}
+.address-link {
+   @extend %link;
+    color: $primary-white-color;
+   
+font-style: normal;
+
+font-size: 14px;
+line-height: 1.71;
+transition: color 250ms $timing-function;
+
+&:hover, &:focus {
+    color: $accent-color;
+}
+}
+
+.contact-link {
+    @extend %link;
+    color: $tarnsparent-text-color;
+    
+font-style: normal;
+
+font-size: 14px;
+line-height: 1.71;
+transition: color 250ms $timing-function;
+
+&:hover, &:focus {
+    color: $accent-color;
+}
+}
+
+.join-text {
+    display: block;
+    margin-bottom: 20px;
+    padding-top: 12px;
+    
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+
+text-transform: uppercase;
+
+color: $primary-white-color;
+}
+.social-list.footer {
+    @extend %list;
+    padding: 0;
+}
+.social-link.footer {
+@extend %link;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover, &:focus {
+        background-color: $accent-color;
+    }
+}
+.social-icon.footer {
+    fill: $primary-white-color;
+}
+
+.sign-container {
+    margin-left: auto;
+
+}
+.sign-form {
+    display: flex;
+    align-items: center;
+}
+.input {
+    // display: inline-block;
+    padding: 15px 16px;
+    margin-right: 12px;
+    min-width: 358px;
+min-height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: transparent;
+color: rgba(255, 255, 255, 0.6);
+cursor: pointer;
+}
+.input::placeholder {
+    font-size: 16px;
+line-height: 1.07;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.submit-btn {
+    @extend %button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px;
+    min-width: 200px;
+min-height: 50px;
+background-color: $accent-color;
+
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+
+text-align: center;
+letter-spacing: 0.06em;
+
+color: $primary-white-color;
+
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+transition: background-color 250ms $timing-function;
+
+&:hover, &:focus {
+    background-color: $btn-hover-bcg-color;
+}
+}
+
+.sign-icon {
+   display: block;
+   margin-left: 8px;
+}
