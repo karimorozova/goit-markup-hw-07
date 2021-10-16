@@ -8,12 +8,12 @@
     @extend %visually-hidden;
 }
 
-.portfolio-list {
+.portfolio__list {
     @extend %list;
     display: flex;
     flex-wrap: wrap;
 }
-.portfolio-item {
+.portfolio__item {
     flex-basis: calc((100% - 60px) / 3);
     
     &:not(:nth-child(3n)) {
@@ -25,7 +25,7 @@
 }
 }
 
-.portfolio-link {
+.portfolio__link {
     @extend %link;
     @include transition(box-shadow);
     display: block;
@@ -35,15 +35,15 @@
 }
 }
 
-.portfolio-thumb {
+.portfolio__thumb {
     position: relative;
     overflow: hidden;
 }
-.portfolio-image {
+.portfolio__image {
     @extend %img;
 }
 
-.thumb-description {
+.portfolio__description {
     @include transition(transform);
     position: absolute;
     left: 0;
@@ -58,20 +58,20 @@ color: $primary-white-color;
 background-color: $accent-color;
 transform: translateY(100%);
 
-.portfolio-link:hover &,
-.portfolio-link:focus & {
+.portfolio__link:hover &,
+.portfolio__link:focus & {
     transform: translateY(0);
 }
 }
 
 
-.portfolio-content {
+.portfolio__content {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: 0;
 }
 
-.portfolio-example-title {
+.portfolio__subtitle {
     margin-bottom: 4px;
     font-weight: 700;
 font-size: 18px;
@@ -80,7 +80,7 @@ letter-spacing: 0.06em;
 
 }
 
- .portfolio-example-text {
+ .portfolio__text {
      color: $secondary-text-color;
     font-size: 16px;
     line-height: 1.87;
