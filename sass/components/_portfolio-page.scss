@@ -1,10 +1,10 @@
 .portfolio {
     @extend %section;
 }
-.container {
+.portfolio__container {
     @extend %container;
 }
-.visually-hidden {
+.portfolio__title--visually-hidden {
     @extend %visually-hidden;
 }
 

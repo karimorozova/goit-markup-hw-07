@@ -1,12 +1,12 @@
-.portfolio-btn-list {
+.portfolio__btn-list {
     @extend %list;
     @include centered(flex);
     margin-bottom: 50px;
 }
-.portfolio-btn-item:not(:last-child) {
+.portfolio__btn-item:not(:last-child) {
     margin-right: 8px;
 }
-.portfolio-btn {
+.portfolio__btn {
     @extend %button;
     padding: 6px 22px;
     color: $primary-text-color;
