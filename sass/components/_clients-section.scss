@@ -1,24 +1,24 @@
 .clients {
     @extend %section;
 }
-.container {
+.clients__container {
     @extend %container;
 }
-.section-title {
+.clients__section-title {
     @extend %section-title;
 }
 
-.clients-list {
+.clients__list {
     @extend %list;
     display: flex;
     flex-basis: calc((100% - 150px) / 6);
 }
-.clients-item:not(:nth-child(6n)) {
+.clients__item:not(:nth-child(6n)) {
     margin-right: 30px;
    
 }
 
- .clients-link {
+ .clients__link {
      @extend %link;
      @include centered(inline-flex);
      @include transition(border);
@@ -31,12 +31,12 @@
         border: 1px solid $accent-color;
     }
 }
-.clients-icon {
+.clients__icon {
     @include transition(fill);
     fill: $primary-icon-color;
 
-    .clients-link:hover &,
-.clients-link:focus & {
+    .clients__link:hover &,
+.clients__link:focus & {
     fill: $accent-color;
 }
 }
