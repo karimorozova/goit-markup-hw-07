@@ -3,7 +3,7 @@
     opacity: 0;
     pointer-events: none;
 }
-.backdrop {
+.modal {
     @include transition(opacity);
     @include transition(visibility);
     position: fixed;
@@ -16,7 +16,7 @@
     opacity: 1;
 }
 
-.modal {
+.modal__thumb {
     @include transition(opacity);
     @include transition(transform);
     position: absolute;
@@ -35,14 +35,14 @@ border-radius: 4px;
 
 opacity: 1;
 
-.backdrop.is-hidden & {
+.modal.is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
     opacity: 0;
 }
 }
 
 
-.modal-btn {
+.modal__btn {
     @extend %button;
     @include centered(flex);
     @include transition(border);
@@ -58,12 +58,12 @@ border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
-.modal-icon {
+.modal__icon {
     @include transition(fill);
     fill: #000000;
 
-    .modal-btn:hover & ,
-.modal-btn:focus &  {
+    .modal__btn:hover & ,
+.modal__btn:focus &  {
     fill: $accent-color;
 }
 }

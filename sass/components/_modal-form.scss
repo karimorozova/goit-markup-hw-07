@@ -1,4 +1,4 @@
-.form-title {
+.modal__title {
     margin-bottom: 12px;
     text-align: center;
    font-style: 700;
@@ -6,23 +6,23 @@
    line-height: 1.15;
 }
 
-.form-field {
+.modal__form-field {
     margin-bottom: 10px;
 }
-.form-label {
+.modal__label {
    font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: $secondary-text-color;
 cursor: pointer;
 }
-.input-field {
+.modal__input-field {
     position: relative;
     display: flex;
     align-items: center;
     margin-top: 4px;
 }
-.form-input {
+.modal__input {
     @include transition(border-color);
     width: 100%;
     min-height: 40px;
@@ -42,14 +42,14 @@ cursor: pointer;
 
 }
 
-.form-icon {
+.modal__form-icon {
     @include transition(fill);
     position: absolute;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
 
-.form-input:focus ~ & {
+.modal__input:focus ~ & {
     fill: $accent-color;
 }
 
@@ -57,17 +57,17 @@ cursor: pointer;
 
 /* Textarea comment */
 
-.comment-field {
+.modal__comment-field {
     margin-bottom: 20px;
 
 }
-.comment {
+.modal__input--large {
     @extend %textarea;
     margin-top: 4px;
     padding: 12px 16px;
     min-height: 120px;
 }
-.comment::placeholder {
+.modal__input--large::placeholder {
     font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.01em;
@@ -76,11 +76,11 @@ color:rgba(117, 117, 117, 0.5);
 
 /* Checkbox */
 
-.checkbox-container {
+.modal__checkbox-container {
    text-align: center;
     margin-bottom: 30px;
 }
-.checkbox-label {
+.modal__checkbox-label {
     cursor: pointer;
     position: relative;
     padding-left: 25px;
@@ -89,37 +89,33 @@ color:rgba(117, 117, 117, 0.5);
     color: $secondary-text-color;
 
 }
-.checkbox-input {
+.modal__checkbox-input {
    @extend %visually-hidden;
 }
-.poicy-link {
+.modal__policy {
     color: $accent-color;
 }
- .checkbox-icon {
+ .modal__checkbox-icon {
      @include transition(opacity);
     position: absolute;
     top: 2px;
     left: 0;
 
-.checkbox-input:checked ~ & {
+.modal__checkbox-input:checked ~ & {
     opacity: 0;
 } 
 }
 
- .checked-icon {
-    @include transition(opacity);
-    position: absolute;
-    top: 2px;
-    left: 0;
+ .modal__checkbox-icon--checked {
      opacity: 0; 
 
- .checkbox-input:checked ~ & {
+ .modal__checkbox-input:checked ~ & {
     opacity: 1;
 }
     }
 
 /* Form button */
-.form-btn {
+.modal__form-btn {
     @extend %button;
     display: block;
     margin-right: auto;

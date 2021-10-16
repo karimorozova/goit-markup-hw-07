@@ -445,58 +445,58 @@
         
         
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <form>
-                <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-                <div class="form-field">
-                <label class="form-label">Имя
-                    <span class="input-field">
-                        <input type="text" name="name" class="form-input">
-                        <svg class="form-icon" width="18" height="18">
+    <div class="modal is-hidden" data-modal>
+        <div class="modal__thumb modal">
+            <form class="modal__form">
+                <b class="modal__title form-title">Оставьте свои данные, мы вам перезвоним</b>
+                <div class="modal__form-field form-field">
+                <label class="modal__label form-label">Имя
+                    <span class="modal__input-field input-field">
+                        <input type="text" name="name" class="modal__input form-input">
+                        <svg class="modal__form-icon form-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-person"></use>
                         </svg>
                     </span>
                 </label>
             </div>
-            <div class="form-field">
-                <label class="form-label">Телефон
-                    <span class="input-field">
-                        <input type="text" name="name" class="form-input">
-                        <svg class="form-icon" width="18" height="18">
+            <div class="modal__form-field form-field">
+                <label class="modal__label form-label">Телефон
+                    <span class="modal__input-field input-field">
+                        <input type="text" name="name" class="modal__input form-input">
+                        <svg class="modal__form-icon form-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-tel"></use>
                         </svg>
                     </span>
                 </label>
             </div>
-            <div class="form-field">
-                <label class="form-label">Почта
-                    <span class="input-field">
-                        <input type="text" name="name" class="form-input">
-                        <svg class="form-icon" width="18" height="18">
+            <div class="modal__form-field form-field">
+                <label class="modal__label form-label">Почта
+                    <span class="modal__input-field input-field">
+                        <input type="text" name="name" class="modal__input form-input">
+                        <svg class="modal__form-icon form-icon" width="18" height="18">
                             <use href="./images/icons.svg#icon-email"></use>
                         </svg>
                     </span>
                 </label>
             </div>
-            <div class="comment-field">
-                <label class="form-label">Комментарий
+            <div class="modal__comment-field">
+                <label class="modal__label form-label">Комментарий
                     <textarea
                      name="comment"
-                      class="form-input comment" 
+                      class="modal__input modal__input--large form-input comment" 
                       placeholder="Введите текст"></textarea>
                     
                 </label>
             </div>
             
-                <div class="checkbox-container">
-                <label class="checkbox-label">
-                    <input type="checkbox" name="policy" class="checkbox-input">
-                    Соглашаюсь с рассылкой и принимаю <a href="" class="poicy-link">Условия договора</a> 
-                    <svg class="checked-icon" width="16" height="15">
+                <div class="modal__checkbox-container">
+                <label class="modal__checkbox-label">
+                    <input type="checkbox" name="policy" class="modal__checkbox-input">
+                    Соглашаюсь с рассылкой и принимаю <a href="" class="modal__policy">Условия договора</a> 
+                    <svg class="modal__checkbox-icon modal__checkbox-icon--checked" width="16" height="15">
                         <use href="./images/icons.svg#icon-check"></use>
                     </svg>
-                    <svg class="checkbox-icon" width="16" height="15">
+                    <svg class="modal__checkbox-icon" width="16" height="15">
                         <use href="./images/icons.svg#icon-checkbox"></use>
                     </svg>
                 </label>
@@ -504,11 +504,11 @@
             
             </div>
 
-            <button type="submit" class="button submit-btn form-btn">Отправить</button>
+            <button type="submit" class="modal__form-btn sign-form__button">Отправить</button>
             
             </form>
-            <button type="button" class="modal-btn" data-modal-close>
-                <svg class="modal-icon" width="14" height="14">
+            <button type="button" class="modal__btn" data-modal-close>
+                <svg class="modal__icon" width="14" height="14">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
                 
