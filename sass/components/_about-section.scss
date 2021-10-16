@@ -2,17 +2,17 @@
     @extend %section;
     padding-top: 0;
 }
-.container {
+.about__container {
     @extend %container;
 }
-.section-title {
+.about__section-title {
     @extend %section-title;
 }
-.about-list {
+.about__list {
     @extend %list;
     display: flex;
 }
-.about-item {
+.about__item {
     position: relative;
     
     flex-basis: calc((100% - 60px) / 3);
@@ -20,12 +20,12 @@
     &:not(:nth-child(3n)) {
         margin-right: 30px;
     }
-    
 }
-.about-image {
+
+.about__image {
     @extend %img;
 }
-.about-description {
+.about__description {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -35,9 +35,7 @@
     padding: 27px 0;
 
 }
-.about-text {
-    
-
+.about__text {
 font-weight: 700;
 font-size: 14px;
 line-height: calc(16 / 14);

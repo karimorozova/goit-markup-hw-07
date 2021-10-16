@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-.page-header__container, .features__container, .container, .footer-container {
+.page-header__container, .features__container, .about__container, .container, .footer-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: inherit;
 }
 
-.site-nav__list, .contacts-list, .features__list, .about-list, .team-list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
+.site-nav__list, .contacts-list, .features__list, .about__list, .team-list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-.about-image, .employee-image, .portfolio-image {
+.about__image, .employee-image, .portfolio-image {
   display: block;
   width: 100%;
   height: auto;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 94px 0;
 }
 
-.features__title, .section-title {
+.features__title, .about__section-title, .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -300,23 +300,23 @@ h1, h2, h3, h4, h5, h6, p {
   padding-top: 0;
 }
 
-.about-list {
+.about__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.about-item {
+.about__item {
   position: relative;
   -ms-flex-preferred-size: calc((100% - 60px) / 3);
       flex-basis: calc((100% - 60px) / 3);
 }
 
-.about-item:not(:nth-child(3n)) {
+.about__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
-.about-description {
+.about__description {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -325,7 +325,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 27px 0;
 }
 
-.about-text {
+.about__text {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
