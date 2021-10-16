@@ -9,15 +9,11 @@
     
 }
 
-
-
 .list-nav {
     @extend %list;
     display: flex;
     
 }
-
-
 
 .item-nav {
     position: relative;
@@ -26,8 +22,6 @@
     margin-right: 50px;
 }
 }
-
-
 
 .link-nav.current {
     @extend %link;
@@ -50,13 +44,13 @@
 
 .link-nav {
     @extend %link;
+    @include transition(color);
     display: block;
     padding: 32px 0;
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
- transition: color 250ms $timing-function;
 
  &:hover, &:focus {
     color: $accent-color;
@@ -76,6 +70,7 @@
 
  .contacts-link {
      @extend %link;
+     @include transition(color);
     display: inline-flex;
     align-items: center;
     padding: 32px 0;
@@ -85,7 +80,6 @@
  font-size: 14px;
  line-height: 1.14;
  letter-spacing: 0.02em;
- transition: color 250ms $timing-function;
 
  &:hover, &:focus {
     color: $accent-color;

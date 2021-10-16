@@ -1,11 +1,8 @@
 .logo {
     @extend %link;
     display: block;
-    
-    
     color: $accent-color;
-    font-family: %$logo-font;
-
+    font-family: $logo-font;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19;
@@ -20,8 +17,8 @@ line-height: 1.19;
     padding: 24px 0;
 }
 .header-logo {
+    @include transition(color);
     color: $primary-text-color;
-    transition: color 250ms $timing-function;
     &:hover, &:focus {
         color: inherit;
     }
@@ -31,9 +28,9 @@ line-height: 1.19;
     margin-bottom: 20px;
 }
 .footer-logo {
+    @include transition(color);
     color: $primary-white-color;
-    transition: color 250ms $timing-function;
-
+   
     &:hover, &:focus {
         color: inherit;
     }

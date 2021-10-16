@@ -56,21 +56,19 @@ line-height: 1.18;
 
 .social-link {
     @extend %link;
-    display:inline-flex;
-    justify-content: center;
-    align-items: center;
+    @include centered(inline-flex);
+    @include transition(background-color);
     width: 44px;
     height: 44px; 
     border-radius: 50%;
-    transition: background-color 250ms $timing-function;
 
     &:hover, &:focus {
         background-color: $accent-color;
     }
 } 
 .social-icon {
+    @include transition(fill);
     fill: $primary-icon-color;
-    transition: fill 250ms $timing-function;
 
     .social-link:hover &,
     .social-link:focus & {

@@ -1,8 +1,6 @@
 .portfolio-btn-list {
     @extend %list;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centered(flex);
     margin-bottom: 50px;
 }
 .portfolio-btn-item:not(:last-child) {
@@ -21,9 +19,9 @@ text-align: center;
 
 background-color: $secondary-bgcolor;
 border-radius: 4px;
-transition: color 250ms $timing-function,
-            background-color 250ms $timing-function,
-            box-shadow 250ms $timing-function;
+transition: color 250ms $timing-function, 
+box-shadow 250ms $timing-function, 
+background-color 250ms $timing-function;
 
             &:hover, &:focus {
     color: $primary-white-color;

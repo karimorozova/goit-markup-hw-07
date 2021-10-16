@@ -19,13 +19,13 @@
 }
 .address-link {
    @extend %link;
+   @include transition(color);
     color: $primary-white-color;
    
 font-style: normal;
 
 font-size: 14px;
 line-height: 1.71;
-transition: color 250ms $timing-function;
 
 &:hover, &:focus {
     color: $accent-color;
@@ -34,13 +34,13 @@ transition: color 250ms $timing-function;
 
 .contact-link {
     @extend %link;
+    @include transition(color);
     color: $tarnsparent-text-color;
     
 font-style: normal;
 
 font-size: 14px;
 line-height: 1.71;
-transition: color 250ms $timing-function;
 
 &:hover, &:focus {
     color: $accent-color;
@@ -85,7 +85,6 @@ color: $primary-white-color;
     align-items: center;
 }
 .input {
-    // display: inline-block;
     padding: 15px 16px;
     margin-right: 12px;
     min-width: 358px;
@@ -104,9 +103,8 @@ color: rgba(255, 255, 255, 0.6);
 
 .submit-btn {
     @extend %button;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include centered(flex);
+    @include transition(background-color);
     margin: 0;
     padding: 10px;
     min-width: 200px;
@@ -124,7 +122,6 @@ color: $primary-white-color;
 
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-transition: background-color 250ms $timing-function;
 
 &:hover, &:focus {
     background-color: $btn-hover-bcg-color;

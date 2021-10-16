@@ -20,23 +20,20 @@
 
  .clients-link {
      @extend %link;
-     display: inline-flex;
-     justify-content: center;
-     align-items: center;
+     @include centered(inline-flex);
+     @include transition(border);
 
     width: 170px;
     height: 92px;
     border: 1px solid $primary-icon-color;
-   
-    transition: border 250ms $timing-function;
 
     &:hover, &:focus {
         border: 1px solid $accent-color;
     }
 }
 .clients-icon {
+    @include transition(fill);
     fill: $primary-icon-color;
-    transition: fill 250ms $timing-function;
 
     .clients-link:hover &,
 .clients-link:focus & {
