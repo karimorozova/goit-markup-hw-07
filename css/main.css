@@ -28,9 +28,26 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.page-hero__button, .sign-form__button, .modal__btn, .modal__form-btn, .portfolio__btn {
+.page-hero__button, .sign-form__button, .modal__form-btn, .portfolio__btn {
   border: none;
   cursor: pointer;
+  padding: 10px;
+  min-width: 200px;
+  min-height: 50px;
+  background-color: #2196F3;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.page-hero__button:hover, .sign-form__button:hover, .modal__form-btn:hover, .portfolio__btn:hover, .page-hero__button:focus, .sign-form__button:focus, .modal__form-btn:focus, .portfolio__btn:focus {
+  background-color: #188CE8;
 }
 
 .about__image, .team__image, .portfolio__image {
@@ -47,7 +64,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 94px 0;
 }
 
-.features__title, .about__section-title, .team__section-title, .clients__section-title {
+.features__title, .about__section-title, .team__section-title, .clients__section-title, .portfolio__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -55,7 +72,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
-.features__title, .modal__checkbox-input, .portfolio__title--visually-hidden {
+.features__title, .modal__checkbox-input, .portfolio__title {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -232,7 +249,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .contacts-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .contacts-list__link {
@@ -292,21 +309,6 @@ h1, h2, h3, h4, h5, h6, p {
 .page-hero__button {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding: 10px 32px;
-  background-color: #2196F3;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.page-hero__button:hover, .page-hero__button:focus {
-  background-color: #188CE8;
 }
 
 .features__list {
@@ -585,24 +587,6 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0;
-  padding: 10px;
-  min-width: 200px;
-  min-height: 50px;
-  background-color: #2196F3;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
-.sign-form__button:hover, .sign-form__button:focus {
-  background-color: #188CE8;
 }
 
 .sign-form__icon {

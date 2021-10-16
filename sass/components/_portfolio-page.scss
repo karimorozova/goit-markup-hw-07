@@ -4,7 +4,8 @@
 .portfolio__container {
     @extend %container;
 }
-.portfolio__title--visually-hidden {
+.portfolio__title {
+    @extend %section-title;
     @extend %visually-hidden;
 }
 

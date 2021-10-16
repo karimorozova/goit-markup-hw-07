@@ -43,7 +43,6 @@ opacity: 1;
 
 
 .modal__btn {
-    @extend %button;
     @include centered(flex);
     @include transition(border);
     position: absolute;

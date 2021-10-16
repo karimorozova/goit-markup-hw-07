@@ -33,23 +33,6 @@ text-transform: uppercase;
 .page-hero__button {
     @extend %button;
     @include transition(background-color);
-padding: 10px 32px;
-    background-color: $accent-color;
-    color: $primary-white-color;
-
-   
-font-weight: 700;
-font-size: 16px;
-line-height: 1.87;
-text-align: center;
-letter-spacing: 0.06em;
-
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-
-&:hover, &:focus {
-    background-color: $btn-hover-bcg-color;
-}
 }
 
 
