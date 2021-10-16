@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-.page-header__container, .features__container, .about__container, .container, .footer-container {
+.page-header__container, .features__container, .about__container, .team__container, .container, .footer-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -17,12 +17,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: auto;
 }
 
-.logo, .site-nav__link--current, .site-nav__link, .contacts-list__link, .social-link, .clients-link, .address-link, .contact-link, .social-link.footer, .portfolio-link {
+.logo, .site-nav__link--current, .site-nav__link, .contacts-list__link, .social-list__link, .clients-link, .address-link, .contact-link, .social-link.footer, .portfolio-link {
   text-decoration: none;
   color: inherit;
 }
 
-.site-nav__list, .contacts-list, .features__list, .about__list, .team-list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
+.site-nav__list, .contacts-list, .features__list, .about__list, .team__list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-.about__image, .employee-image, .portfolio-image {
+.about__image, .team__image, .portfolio-image {
   display: block;
   width: 100%;
   height: auto;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 94px 0;
 }
 
-.features__title, .about__section-title, .section-title {
+.features__title, .about__section-title, .team__section-title, .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -338,13 +338,13 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #F5F4FA;
 }
 
-.team-list {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.team-item {
+.team__item {
   background-color: #FFFFFF;
   width: calc((100% - 90px) / 4);
   text-align: center;
@@ -353,22 +353,22 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:not(:nth-child(4n)) {
+.team__item:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
-.employee-image {
+.team__image {
   margin-bottom: 30px;
 }
 
-.employee-title {
+.team__subtitle {
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
-.employee-text {
+.team__text {
   margin-bottom: 16px;
   color: #757575;
   font-size: 16px;
@@ -385,11 +385,11 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 32px 30px;
 }
 
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-link {
+.social-list__link {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -406,18 +406,18 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 50%;
 }
 
-.social-link:hover, .social-link:focus {
+.social-list__link:hover, .social-list__link:focus {
   background-color: #2196F3;
 }
 
-.social-icon {
+.social-list__icon {
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #AFB1B8;
 }
 
-.social-link:hover .social-icon,
-.social-link:focus .social-icon {
+.social-list__link:hover .social-list__icon,
+.social-list__link:focus .social-list__icon {
   fill: #FFFFFF;
 }
 

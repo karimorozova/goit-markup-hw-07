@@ -2,18 +2,18 @@
     @extend %section;
     background-color: $secondary-bgcolor;
 }
-.container {
+.team__container {
     @extend %container;
 }
-.section-title {
+.team__section-title {
     @extend %section-title;
 }
 
-.team-list {
+.team__list {
     @extend %list;
     display: flex;
 }
-.team-item {
+.team__item {
     background-color: $primary-white-color;
     width: calc((100% - 90px) / 4);
     text-align: center;
@@ -25,11 +25,11 @@ border-radius: 0px 0px 4px 4px;
 }
 }
 
-.employee-image {
+.team__image {
     @extend %img;
     margin-bottom: 30px ;
 }
-.employee-title {
+.team__subtitle {
     margin-bottom: 10px;
     
 font-weight: 500;
@@ -37,7 +37,7 @@ font-size: 16px;
 line-height: 1.18;
 
 }
-.employee-text {
+.team__text {
     margin-bottom: 16px;
     color: $secondary-text-color;
     
@@ -50,11 +50,11 @@ line-height: 1.18;
     align-items: center;
     padding: 0 32px 30px;
 }
-.social-item:not(:last-child) {
+.social-list__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.social-link {
+.social-list__link {
     @extend %link;
     @include centered(inline-flex);
     @include transition(background-color);
@@ -66,12 +66,12 @@ line-height: 1.18;
         background-color: $accent-color;
     }
 } 
-.social-icon {
+.social-list__icon {
     @include transition(fill);
     fill: $primary-icon-color;
 
-    .social-link:hover &,
-    .social-link:focus & {
+    .social-list__link:hover &,
+    .social-list__link:focus & {
         fill: $primary-white-color;
     }
 }
