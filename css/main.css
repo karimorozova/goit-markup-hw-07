@@ -17,18 +17,18 @@ h1, h2, h3, h4, h5, h6, p {
   margin-left: auto;
 }
 
-.logo, .site-nav__link--current, .site-nav__link, .contacts-list__link, .social-list__link, .clients__link, .address-link, .contact-link, .social-link.footer, .portfolio-link {
+.logo, .site-nav__link--current, .site-nav__link, .contacts-list__link, .social-list__link, .clients__link, .address__link, .portfolio-link {
   text-decoration: none;
   color: inherit;
 }
 
-.site-nav__list, .contacts-list, .features__list, .about__list, .team__list, .social-list, .clients__list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
+.site-nav__list, .contacts-list, .features__list, .about__list, .team__list, .social-list, .clients__list, .address__list, .portfolio-list, .portfolio-btn-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.page-hero__button, .submit-btn, .modal-btn, .form-btn, .portfolio-btn {
+.page-hero__button, .sign-form__button, .modal-btn, .form-btn, .portfolio-btn {
   border: none;
   cursor: pointer;
 }
@@ -94,18 +94,18 @@ h1, h2, h3, h4, h5, h6, p {
   color: inherit;
 }
 
-.logo-footer {
+.page-footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 }
 
-.footer-logo {
+.logo__footer-text {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFFFFF;
 }
 
-.footer-logo:hover, .footer-logo:focus {
+.logo__footer-text:hover, .logo__footer-text:focus {
   color: inherit;
 }
 
@@ -476,15 +476,15 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
 }
 
-.address-container {
+.page-footer__address-box {
   margin-right: 70px;
 }
 
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address__link {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #FFFFFF;
@@ -493,24 +493,15 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.71;
 }
 
-.address-link:hover, .address-link:focus {
+.address__link:hover, .address__link:focus {
   color: #2196F3;
 }
 
-.contact-link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.address__link--transparent {
   color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
 }
 
-.contact-link:hover, .contact-link:focus {
-  color: #2196F3;
-}
-
-.join-text {
+.page-footer__join-text {
   display: block;
   margin-bottom: 20px;
   padding-top: 12px;
@@ -521,23 +512,19 @@ h1, h2, h3, h4, h5, h6, p {
   color: #FFFFFF;
 }
 
-.social-list.footer {
+.page-footer__social-list {
   padding: 0;
 }
 
-.social-link.footer {
+.social-list__link--transparent {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-link.footer:hover, .social-link.footer:focus {
-  background-color: #2196F3;
-}
-
-.social-icon.footer {
+.social-list__icon--white {
   fill: #FFFFFF;
 }
 
-.sign-container {
+.page-footer__sign-container {
   margin-left: auto;
 }
 
@@ -550,7 +537,7 @@ h1, h2, h3, h4, h5, h6, p {
           align-items: center;
 }
 
-.input {
+.sign-form__input {
   padding: 15px 16px;
   margin-right: 12px;
   min-width: 358px;
@@ -562,31 +549,31 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 
-.input::-webkit-input-placeholder {
+.sign-form__input::-webkit-input-placeholder {
   font-size: 16px;
   line-height: 1.07;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input:-ms-input-placeholder {
+.sign-form__input:-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.07;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input::-ms-input-placeholder {
+.sign-form__input::-ms-input-placeholder {
   font-size: 16px;
   line-height: 1.07;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input::placeholder {
+.sign-form__input::placeholder {
   font-size: 16px;
   line-height: 1.07;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.submit-btn {
+.sign-form__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -614,11 +601,11 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
 }
 
-.submit-btn:hover, .submit-btn:focus {
+.sign-form__button:hover, .sign-form__button:focus {
   background-color: #188CE8;
 }
 
-.sign-icon {
+.sign-form__icon {
   display: block;
   margin-left: 8px;
 }

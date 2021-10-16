@@ -23,11 +23,11 @@ line-height: 1.19;
         color: inherit;
     }
 }
-.logo-footer {
+.page-footer__logo {
     display: inline-block;
     margin-bottom: 20px;
 }
-.footer-logo {
+.logo__footer-text {
     @include transition(color);
     color: $primary-white-color;
    
