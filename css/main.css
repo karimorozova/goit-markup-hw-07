@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-.page-header__container, .container, .footer-container {
+.page-header__container, .features__container, .container, .footer-container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
@@ -22,7 +22,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: inherit;
 }
 
-.site-nav__list, .contacts-list, .features-list, .about-list, .team-list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
+.site-nav__list, .contacts-list, .features__list, .about-list, .team-list, .social-list, .clients-list, .address-list, .social-list.footer, .portfolio-list, .portfolio-btn-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 94px 0;
 }
 
-.visually-hidden, .section-title {
+.features__title, .section-title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -55,7 +55,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 
-.visually-hidden, .checkbox-input {
+.features__title, .checkbox-input, .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -251,22 +251,22 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #188CE8;
 }
 
-.features-list {
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.features-item {
+.features__item {
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
       flex-basis: calc((100% - 90px) / 4);
 }
 
-.features-item:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.features-thumb {
+.features__thumb {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -282,7 +282,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #F5F4FA;
 }
 
-.features-item-title {
+.features__subtitle {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -290,7 +290,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: uppercase;
 }
 
-.features-text {
+.features__text {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;

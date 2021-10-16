@@ -1,18 +1,18 @@
 .features {
     @extend %section;
 }
-.container {
+.features__container {
     @extend %container;
 }
-.visually-hidden {
+.features__title {
     @extend %section-title;
     @extend %visually-hidden;
 }
-.features-list {
+.features__list {
     @extend %list;
     display: flex;
 }
-.features-item {
+.features__item {
    
    flex-basis: calc((100% - 90px) / 4);
    
@@ -22,10 +22,8 @@
     
 }
 
-.features-thumb {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+.features__thumb {
+    @include centered(inline-flex);
     margin-bottom: 30px;
    
     width: 270px;
@@ -34,14 +32,14 @@
 }
 
 
-.features-item-title {
+.features__subtitle {
     margin-bottom: 10px;
     font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-transform: uppercase;
 }
-.features-text {
+.features__text {
     color: $secondary-text-color;
         
 font-size: 14px;
