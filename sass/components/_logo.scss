@@ -12,11 +12,11 @@ line-height: 1.19;
 
 }
 }
-.logo-header {
+.page-header__logo {
     margin-right: 93px;
     padding: 24px 0;
 }
-.header-logo {
+.logo__header-text {
     @include transition(color);
     color: $primary-text-color;
     &:hover, &:focus {
