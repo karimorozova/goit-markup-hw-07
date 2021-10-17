@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.page-hero__button, .sign-form__button, .modal__form-btn, .portfolio__btn {
+.page-hero__button, .sign-form__button, .modal__form-btn {
   border: none;
   cursor: pointer;
   padding: 10px;
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6, p {
   border-radius: 4px;
 }
 
-.page-hero__button:hover, .sign-form__button:hover, .modal__form-btn:hover, .portfolio__btn:hover, .page-hero__button:focus, .sign-form__button:focus, .modal__form-btn:focus, .portfolio__btn:focus {
+.page-hero__button:hover, .sign-form__button:hover, .modal__form-btn:hover, .page-hero__button:focus, .sign-form__button:focus, .modal__form-btn:focus {
   background-color: #188CE8;
 }
 
@@ -677,6 +677,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .modal__title {
+  display: block;
   margin-bottom: 12px;
   text-align: center;
   font-style: 700;
@@ -712,7 +713,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   min-height: 40px;
-  padding: 11px 12px;
+  padding: 11px;
   padding-left: 34px;
   font-size: 12px;
   line-height: 1.16;
@@ -929,6 +930,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .portfolio__btn {
+  cursor: pointer;
+  border: none;
   padding: 6px 22px;
   color: #212121;
   letter-spacing: inherit;

@@ -1,4 +1,5 @@
 .modal__title {
+    display: block;
     margin-bottom: 12px;
     text-align: center;
    font-style: 700;
@@ -26,7 +27,7 @@ cursor: pointer;
     @include transition(border-color);
     width: 100%;
     min-height: 40px;
-    padding: 11px 12px;
+    padding: 11px;
     padding-left: 34px;
     font-size: 12px;
 line-height: 1.16;

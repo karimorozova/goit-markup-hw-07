@@ -7,7 +7,9 @@
     margin-right: 8px;
 }
 .portfolio__btn {
-    @extend %button;
+    // @extend %button;
+    cursor: pointer;
+    border: none;
     padding: 6px 22px;
     color: $primary-text-color;
 
